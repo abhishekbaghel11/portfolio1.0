@@ -146,7 +146,7 @@ html{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
-    opacity: 0;
+    opacity: 0; 
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
@@ -330,6 +330,20 @@ section{
     border-radius: 6px;
     text-align: center;
     transition: all 0.3s ease;
+    opacity:0;
+}
+
+.skill .skill-content .box.left{
+    transform: translateX(-100px);
+}
+.skill .skill-content .box.right{
+    transform: translateX(100px);
+}
+
+.skill .skill-content .box.box-appear{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease;
 }
 
 .skill .skill-content .box:hover{
@@ -458,11 +472,11 @@ section{
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     width: calc(1%*var(--j));
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 .progress .progress-content:hover{
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .progress .progress-content .progress-box:hover{
@@ -486,6 +500,7 @@ section{
     transform: scale(1.05);
     box-shadow: 0 0 5px black;
 }
+
 
 /* achievement section styling */
 .achievement{
