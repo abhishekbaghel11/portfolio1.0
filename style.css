@@ -449,7 +449,16 @@ section{
     box-shadow: 0 0 10px black;
     /* text-align: center;
     color: black; */
-    animation: bar 1s ease-in forwards;
+    /* animation: bar 1s ease-in forwards; */
+    width: 0;
+    transition: all 1s ease;
+}
+
+.progress .progress-content .progress-bar.animate{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: calc(1%*var(--j));
+    transition: all 1s ease;
 }
 
 .progress .progress-content:hover{
@@ -754,11 +763,11 @@ footer .name{
     
 }
 
-@keyframes bar{
+/* @keyframes bar{
     0%{
         width: 0;
     }
     100%{
         width: calc(1%*var(--j));
     }
-}
+} */
