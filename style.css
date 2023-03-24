@@ -371,6 +371,113 @@ section{
     color: #1f242d;
 }
 
+/* Progress section styling */
+
+.progress .title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.progress .title:hover{
+    font-size: 35px;
+    font-weight: 1000;
+    text-shadow: 0 0 10px crimson;
+}
+
+.progress .line{
+    border: none;
+    /* border-top-style: dotted; */
+    border-top-style: solid;
+    /* border-width: 0.35rem; */
+    color: black;
+    width: 12%;
+    margin: 0 auto;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.progress .progress-content{
+    background-color: #1f242d;
+    color: white;
+    border: solid crimson 3px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.progress .progress-content .progress-title{
+    font-size: 15px;
+    padding-bottom: 3px;
+    text-align: center;
+    /* padding-right: 10px; */
+    transition: all 0.3s ease;
+}
+
+.progress .progress-content .progress-box{
+    padding: 12px 20px;
+    /* display: flex; */
+    transition: all 0.3s ease;
+}
+
+.progress .progress-content .progress-full{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    transition: all 0.3s ease;
+}
+
+.progress .progress-content .progress-text{
+    color: black;
+    background: transparent;
+    z-index: 100;
+    position: absolute;
+    right: 48%;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.progress .progress-content .progress-bar{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    /* text-align: center;
+    color: black; */
+    animation: bar 1s ease-in forwards;
+}
+
+.progress .progress-content:hover{
+    transform: scale(1.05);
+}
+
+.progress .progress-content .progress-box:hover{
+    /* border: solid crimson 2px; */
+    background-color: #0ef;
+    box-shadow: 0 0 5px #0ef;
+    border-radius: 10px;
+}
+
+.progress .progress-content .progress-box:hover .progress-text{
+    display: block;
+}
+
+.progress .progress-content .progress-box:hover .progress-title{
+    font-size: 18px;
+    color: #1f242d;
+    font-weight: 800;
+}
+
+.progress .progress-content .progress-box:hover .progress-full{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px black;
+}
+
 /* achievement section styling */
 .achievement{
     background-color: white;
@@ -644,4 +751,13 @@ footer .name{
         opacity: 1;
     }
     
+}
+
+@keyframes bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: calc(1%*var(--j));
+    }
 }
