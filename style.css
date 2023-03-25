@@ -464,7 +464,7 @@ section{
     /* text-align: center;
     color: black; */
     /* animation: bar 1s ease-in forwards; */
-    width: calc(1%*var(--j));
+    width: 0;
     transition: all 1s ease;
 }
 
